@@ -1,0 +1,24 @@
+[project]
+name = "webexe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "murcubcc110", email = "qzbkctns05@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "duckduckgo-search>=8.1.1",
+    "httpx>=0.28.1",
+    "markdownify>=1.2.3",
+    "mcp[cli]>=2.2.0",
+    "playwright>=1.63.0",
+]
+
+[project.scripts]
+webexe = "webexe:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"

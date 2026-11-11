@@ -1,0 +1,34 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "webexe": {
+      "type": "local",
+      "command": [
+        "uv",
+        "run",
+        "webexe"
+      ],
+      "cwd": "D:\\dev\\webexe",
+      "enabled": true
+    }
+  },
+  "permission": {
+    "webexe": "allow",
+    "webexe_*": "allow",
+    "fetch_web_page": "allow",
+    "search_web": "allow",
+    "extract_page_links": "allow",
+    "extract_page_tables": "allow",
+    "search_page_content": "allow"
+  },
+  "command": {
+    "search": {
+      "template": "webexe の search_web ツールを使用して以下のキーワードでWeb検索を行い、結果をまとめてください:\n$ARGUMENTS",
+      "description": "GoogleまたはDuckDuckGoでWeb検索を実行します"
+    },
+    "fetch": {
+      "template": "webexe の fetch_web_page ツールを使用して以下のURLのWebページにアクセスし、内容を要約または抽出してください:\n$ARGUMENTS",
+      "description": "指定したURLのWebページ情報を取得します"
+    }
+  }
+}
