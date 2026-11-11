@@ -3,6 +3,8 @@
 Webページにアクセスして情報を取得・抽出するための Model Context Protocol (MCP) サーバーです。
 軽量な HTTP リクエストによる高速取得モードと、Playwright（ヘッドレス Chromium）による JavaScript 描画・SPA 対応ブラウザモードの両方をサポートしています。
 
+[作成した時のプロンプト](./prompt.md)
+
 ---
 
 ## 主な機能
